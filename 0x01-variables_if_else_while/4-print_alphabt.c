@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: A C print_alphabet
+ * Description: A C print alphabet expect e q
  *
  * Return: Always 0 (Success)
 */

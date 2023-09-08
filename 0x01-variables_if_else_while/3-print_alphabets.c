@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: A C print_alphabet
+ * Description: A C print lower and upper alphabet
  *
  * Return: Always 0 (Success)
 */
