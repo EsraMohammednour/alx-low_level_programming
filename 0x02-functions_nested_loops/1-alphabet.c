@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Print alphabet
  *
- * Description: A C program to write a function to print_alphabet 
- *
- * Return: Always 0 (Success)
+ * Description: Function to print_alphabet
 */
 
 void print_alphabet(void)
