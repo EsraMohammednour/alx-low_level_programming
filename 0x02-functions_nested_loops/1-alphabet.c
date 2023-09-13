@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: A C program to print_alphabet
+ * Description: A C program to  Write a function to print_alphabet in lowercase 
  *
  * Return: Always 0 (Success)
 */
