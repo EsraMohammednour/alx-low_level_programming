@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: A C program to  Write a function to print_alphabet 
+ * Description: A C program to write a function to print_alphabet 
  *
  * Return: Always 0 (Success)
 */
