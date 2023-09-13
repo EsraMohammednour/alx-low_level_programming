@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _islower -Function to check lower case
+ * _islowe - Check lowercase
  *
- * @C: input char
+ * @c:The charactor to be checked
  *
  * Return: 1 if it si lowercase else 0 (Success)
 */
