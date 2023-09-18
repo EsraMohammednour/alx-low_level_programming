@@ -5,16 +5,17 @@
  *
  * @s: integer pointer
  *
- * Return : c
+ * Return: c
  */
- 
+
 int _strlen(char *s)
 {
 	int c = 0;
-	while (*s !='\n')
+
+	while (*s != '\0')
 	{
 		c++;
 		s++;
 	}
-	return c;
+	return (c);
 }
