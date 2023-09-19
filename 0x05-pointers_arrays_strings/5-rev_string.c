@@ -6,7 +6,7 @@
  * @s: variable pointer
  */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int l, x, h;
 	char t;

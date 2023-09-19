@@ -1,4 +1,4 @@
-#inxlude "main.h"
+#include "main.h"
 
 /**
  * puts_half - Print half of string
@@ -6,7 +6,7 @@
  * @str: variable pointer
  */
 
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int f, h;
 
