@@ -4,11 +4,11 @@
  * *_strcpy - Copies the string pointed to by src
  *
  * @dest: first  variable pointer
- * @scr: second variable pointer
+ * @src: second variable pointer
  *
  * Return: dest
  */
- 
+
 char *_strcpy(char *dest, char *src)
 {
 	int i = -1;
