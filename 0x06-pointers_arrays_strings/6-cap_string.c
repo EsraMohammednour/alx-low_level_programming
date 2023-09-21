@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * cap_string - function that changes lowercase letters to uppercase
@@ -8,7 +8,7 @@ i#include "main.h"
  * Return: pointer to uppercase string
  */
 
-char *cap_string(char *x);
+char *cap_string(char *x)
 {
 	int y;
 
@@ -19,7 +19,7 @@ char *cap_string(char *x);
 		{
 			x[0] = x[0] - 32;
 		}
-		if (x[y] == ' ' || x[y] == '\t' || x[y] == '\n' x[y] == ','
+		if (x[y] == ' ' || x[y] == '\t' || x[y] == '\n' || x[y] == ','
 			|| x[y] == ';' || x[y] == '.' || x[y] == '!'
 			|| x[y] == '?' || x[y] == '"' || x[y] == '('
 			|| x[y] == ')' || x[y] == '{' || x[y] == '}')
