@@ -9,7 +9,7 @@
 
 int prime1(int a, int b)
 {
-	if (a < 0 || (a != b && a % b == 0))
+	if (a <= 1 || (a != b && a % b == 0))
 	{
 		return (0);
 	}
@@ -22,7 +22,7 @@ int prime1(int a, int b)
 /**
  * is_prime_number - checkif it is prime or not
  * @n: variabl
- * Return: 1 or 0
+ * Return: 0 or 1
  */
 int is_prime_number(int n)
 {
