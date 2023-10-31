@@ -21,20 +21,20 @@ char *str_concat(char *s1, char *s2)
 	}
 	size1 = strlen(s1);
 	size2 = strlen(s2);
-	con = (char *)malloc((size1 + size2) * sizeof(char));
+	con = (char *)malloc((size1 + size2 + 1) * sizeof(char));
 	if (con == NULL)
 	{
+		free(con);
 		return (NULL);
 	}
-	for (j = 0; j < size1; j++)
+	for (j = 0; j < size1 ; j++)
 	{
 		con[j] = s1[j];
 	}
-	 for (i = 0; s2[i] != '\0';)
+	 for (i = 0; i < size2; i++)
 	{
-		i++;
-		con[size1++] = s2[i];
+		con[j] = s2[i];
+		j++;
 	}
-	con[size1] = '\0';
 	return (con);
 }
