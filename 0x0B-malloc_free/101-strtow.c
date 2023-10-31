@@ -4,7 +4,7 @@
 /**
  * word_count - Count the words in  the string
  *
- * @s: string 
+ * @s: string
  *
  * Return: int
  */
