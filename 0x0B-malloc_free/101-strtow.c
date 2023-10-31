@@ -11,7 +11,7 @@
 
 int word_count(char *s)
 {
-	int a, i, j;
+	int c, i, j;
 
 	c = 0;
 	j = 0;
@@ -59,7 +59,7 @@ char **strtow(char *str)
 		{
 			if (d)
 			{
-				last = i;
+				l = i;
 				m = (char *) malloc(sizeof(char) * (d + 1));
 				if (m == NULL)
 					return (NULL);
