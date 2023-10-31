@@ -5,6 +5,7 @@
  * @av: char array
  * Return: char value
  */
+
 char *argstostr(int ac, char **av)
 {
 	int i, j, l = 0;
@@ -13,33 +14,32 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 	{
-		return (NULL);
 		return (0);
 	}
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j]; j++)
 		{
 			l++;
 		}
-	l += ac;
 	}
-	p = malloc(sizeof(char) * l + 1);
+	l += ac;
+
+	ptr = malloc( 1 + l * sizeof(char));
 	if (p == 0)
 	{
-		return (NULL);
 		return (0);
 	}
 	for (i = 0; i < ac; i++)
 	{
-	for (j = 0; av[i][j] != '\0'; j++)
+	for (j = 0; av[i][j]; j++)
 	{
-		p[n] = av[i][j];
+		ptr[n] = av[i][j];
 		n++;
 	}
-	if (p[n] == '\0')
+	if (ptr[n] == '\0')
 	{
-		p[n++] = '\n';
+		ptr[n++] = '\n';
 	}
 	}
 	return (p);
