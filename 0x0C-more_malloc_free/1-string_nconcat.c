@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (j = 0; j < n && j < l2; j++)
 	{
-		if (n >= l2)
+		if (n > l2)
 		{
 			n = l2;
 		}
