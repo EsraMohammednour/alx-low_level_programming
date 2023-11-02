@@ -26,15 +26,17 @@ int _atoi(char *str)
 	int s = 1;
 	unsigned long int r = 0, f, i;
 
-	for (f = 0; !(str[f] >= '0' && str[f] <= '9'); f++)
+	for (f = 0; !(str[f] >= 48 && str[f] <= 57); f++)
 	{
 		if (str[f] == '-')
-		s *= -1;
+		{
+			s *= -1;
+		}
 	}
-	for (i = f; str[i] >= '0' && str[i] <= '9'; i++)
+	for (i = f; str[i] >= 48 && str[i] <= 57; i++)
 	{
 		r *= 10;
-		r += (str[i] - '0');
+		r += (str[i] - 48);
 	}
 	return (s * r);
 }
@@ -49,7 +51,9 @@ void print_i(unsigned long int p)
 	unsigned long int d = 1, i, r;
 
 	for (i = 0; p / d > 9; i++)
-	d *= 10;
+	{
+		d *= 10;
+	}
 	for (; d >= 1; p %= d, d /= 10)
 	{
 		r = p / d;
