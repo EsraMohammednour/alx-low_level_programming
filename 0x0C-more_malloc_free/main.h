@@ -7,3 +7,6 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
+void putsc(char *st);
+int _atoi(char *str);
+void print_i(unsigned long int p);
