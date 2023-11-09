@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(A, char *);
 				if (b == NULL)
-					str = "(nil)";
+					b = "(nil)";
 				printf("%s", b);
 				break;
 			default:
