@@ -2,10 +2,9 @@
 
 /**
  * msg - prints a specific message
- *
- * Return: No return
+ * Return: void
  */
-void msg(void)
+void story(void)
 {
 	printf("You're beat! and yet, you must allow,");
 	printf("\nI bore my house upon my back!\n");
