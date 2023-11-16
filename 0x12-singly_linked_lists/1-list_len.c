@@ -1,19 +1,19 @@
 #include "lists.h"
 
 /**
- * list_len - Function that returns the number of elements
- * @h: Pointer
- * Return: size_t value
+ * list_len - function that returns the number of elements
+ * @h: head pointer
+ * Return: number of elements
  */
 
 size_t list_len(const list_t *h)
 {
-	size_t x = 0;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
 		h = h->next;
-		x++;
+		count++;
 	}
-	return (x);
+	return (count);
 }
