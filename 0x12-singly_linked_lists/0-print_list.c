@@ -5,18 +5,23 @@
  * @h: Pointer
  * Return: value
  */
+
 size_t print_list(const list_t *h)
 {
-	size_t x = 0;
+	size_t i = 0;
 
 	while (h != NULL)
 	{
 		if (h->str != NULL)
+		{
 			printf("[%i] %s\n", h->len, h->str);
+		}
 		else
+		{
 			printf("[0] (nil)\n");
+		}
 		h = h->next;
-		x++;
+		i++;
 	}
-	return (x);
+	return (i);
 }
