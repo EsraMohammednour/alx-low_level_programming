@@ -3,11 +3,11 @@
 /**
  * print_list - Function that print list
  * @h: Pointer
- *Return: size_t value
+ *Return: value
  */
 size_t print_list(const list_t *h)
 {
-	size_t x = 0;
+	size_t i = 0;
 
 	while (h != NULL)
 	{
@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 		h = h->next;
-		x++;
+		i++;
 	}
-	return (x);
+	return (i);
 }
