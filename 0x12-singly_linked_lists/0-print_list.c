@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 
 /**
  * print_list - Function that print list
@@ -8,7 +8,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t x = 0;
 
 	while (h != NULL)
 	{
@@ -21,7 +21,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		}
 		h = h->next;
-		i++;
+		x++;
 	}
-	return (i);
+	return (x);
 }
