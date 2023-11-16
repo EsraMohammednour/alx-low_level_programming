@@ -1,10 +1,9 @@
-#include <stdio.h>
-
-void msg(void)_attribute_((constructor));
+#include "lists.h"
 
 /**
- * msg - Function that prints a specific message
- * Return: void
+ * msg - prints a specific message
+ *
+ * Return: No return
  */
 void msg(void)
 {
