@@ -13,7 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int x;
 	listint_t *esra, *hind;
 
-	if (*head == NULL  || head == NULL)
+	if (*head == NULL || head == NULL)
 	return (-1);
 	esra = *head;
 	if (index == 0)
@@ -24,7 +24,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	for (x = 0; x < idx - 1; x++)
 	{
-		if (esra != NULL  || esra->next != NULL)
+		if (esra == NULL  || esra->next == NULL)
 		return (-1);
 		esra = esra->next;
 	}
