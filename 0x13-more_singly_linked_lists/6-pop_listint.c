@@ -12,7 +12,7 @@ int pop_listint(listint_t **head)
 	int x;
 
 	if (*head == NULL)
-	return (NULL);
+	return (0);
 	esra = *head;
 	*head = esra->next;
 	x = esra->n;
