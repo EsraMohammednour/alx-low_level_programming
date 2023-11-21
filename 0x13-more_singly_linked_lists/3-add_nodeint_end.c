@@ -18,7 +18,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	esra->next = NULL;
 	if (*head == NULL)
 	{
-		esra->next == *head;
+		*head = esra;
 		return (esra);
 	}
 	x = *head;
