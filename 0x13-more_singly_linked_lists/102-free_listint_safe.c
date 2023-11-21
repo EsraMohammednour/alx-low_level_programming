@@ -1,6 +1,10 @@
 #include "lists.h"
 
-
+/**
+ * free_listint_safe - Function that frees a listint_t list
+ * @h: Pointer
+ * Return: unsigned int value
+ */
 size_t free_listint_safe(listint_t **h)
 {
 	listint_t *t = *h, *t2;
