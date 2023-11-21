@@ -14,18 +14,21 @@ size_t print_listint_safe(const listint_t *head)
 	t = head;
 	if (t == 0)
 		return (0);
-
-	while (t != 0)
+	if (t)
 	{
-		t2 = t;
-		t = t->next;
-		printf("[%p] %d\n", (void *)t2, t2->n);
-		x++;
-		if (t2 <= t)
+		while (t != 0)
 		{
-			printf("-> [%p] %d\n", (void *)t, t->n);
-			exit(98);
+			t2 = t;
+			t = t->next;
+			printf("[%p] %d\n", (void *)t2, t2->n);
+			x++;
+			if (t2 <= t)
+			{
+				printf("-> [%p] %d\n", (void *)t, t->n);
+				break;
+			}	
 		}
 	}
+	exit(98);
 	return (x);
 }
