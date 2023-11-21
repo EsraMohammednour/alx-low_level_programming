@@ -5,22 +5,25 @@
  * @head: Pointer
  * Return: unsigned int value
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *esra, *hind;
-	size_t x;
+	const listint_t *t, *t2;
+	unsigned int x = 0;
 
-	esra = head;
-	if (esra == 0)
-	return (0);
-	for (x = 0; esra != 0; x++)
+	t = head;
+	if (t == 0)
+		return (0);
+
+	while (t != 0)
 	{
-		hind = esra;
-		esra = esra->next;
-		printf("[%p] %d\n", (void *)hind, hind->n);
-		if (hind <= esra)
+		t2 = t;
+		t = t->next;
+		x++;
+		printf("[%p] %d\n", (void *)t2, t2->n);
+		if (t2 <= t)
 		{
-			printf("-> [%p] %d\n", (void *)esra, esra->n);
+			printf("-> [%p] %d\n", (void *)t, t->n);
 			break;
 		}
 	}
