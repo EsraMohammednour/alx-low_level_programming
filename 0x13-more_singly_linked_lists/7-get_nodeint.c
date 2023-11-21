@@ -17,5 +17,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	esra = head;
 	for (x = 0; x < index && esra; x++)
 	esra = esra->next;
-	return (x);
+	return (esra);
 }
