@@ -9,11 +9,10 @@ void free_listint2(listint_t **head)
 {
 	listint_t *esra;
 
+	if (*head)
 	while (*head != NULL)
 	{
-		if (*head == NULL)
-		*head == "(nil)";
-		esra = (*head)->next;
-		free(*head);
-		*head = esra;
+		esra = *head;
+		*head = esra->next;
+		free(esra);
 	}
