@@ -24,7 +24,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	for (x = 0; x < idx - 1; x++)
 	{
-		if (esra == NULL || esra->next == NULL)
+		if (!esra || !esra->next)
 		return (-1);
 		esra = esra->next;
 	}
