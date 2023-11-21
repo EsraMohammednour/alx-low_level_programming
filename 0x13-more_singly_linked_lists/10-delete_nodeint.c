@@ -22,7 +22,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(esra);
 		return (1);
 	}
-	for (x = 0; x < idex - 1; x++)
+	for (x = 0; x < index - 1; x++)
 	{
 		if (!esra || !esra->next)
 		return (-1);
