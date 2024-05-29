@@ -1,0 +1,6 @@
+
+CC := gcc
+CC := ${CC}
+SRC := $(wildcard *.c)
+all:
+	@echo ${CC} ${SRC} -o school
