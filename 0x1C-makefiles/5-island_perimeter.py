@@ -6,15 +6,16 @@ def island_perimeter(grid):
     Arg:
         grid: list of integers
     """
-    width = len(grid[0])
-    height = len(grid)
-    s = 0
-    for i in range(height):
-        for j in range(width):
-            if grid[i][j] == 1:
-                s += 4
-            if (j > 0 and grid[i][j - 1] == 1):
-                s -= 2
-                if (i > 0 and grid[i - 1][j] == 1):
-                    s -= 2
-    return s
+    ret = 0
+    for y, row in enumerate(grid):
+        for x, cell in enumerate(row):
+            if cell == 1:
+                if y == 0 or grid[y - 1][x] == 0:
+                    ret += 1
+                if y == len(grid) - 1 or grid[y + 1][x] == 0:
+                    ret += 1
+                if x == 0 or grid[y][x - 1] == 0:
+                    ret += 1
+                if x ==len(row) - 1 or grid[y][x + 1] == 0:
+                    ret += 1
+    return ret
