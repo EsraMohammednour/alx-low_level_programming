@@ -1,6 +1,7 @@
-#ifndef _SORTING_ALOGOS_H_
-#define _SORTING_ALOGOS_H_
+#ifndef SORTING_ALOGOS_H
+#define SORTING_ALOGOS_H
 #include <stdio.h>
 #include <stdlib.h>
 int linear_search(int *array, size_t size, int value);
+int main(void);
 #endif
