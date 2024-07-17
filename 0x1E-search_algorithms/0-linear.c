@@ -1,6 +1,6 @@
 #include "search_algos.h"
  /**
-  * linear_search- search for a value in arrray usng linear algorithm
+  * linear_search - search for a value in arrray usng linear algorithm
   * @array: array pointer
   * @value: value the we want to search
   * Return: Always EXIT_SUCCESS
